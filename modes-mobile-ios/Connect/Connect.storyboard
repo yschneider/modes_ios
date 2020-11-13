@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect-->
+        <scene sceneID="xf2-Tl-OB5">
+            <objects>
+                <viewController storyboardIdentifier="ConnectViewController" modalTransitionStyle="crossDissolve" interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h18-4L-uDM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5w-cF-IVR" userLabel="DetailsGuideCont">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8w-JM-MXu" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-AJ-EJq">
+                                        <rect key="frame" x="123.66666666666669" y="16" width="47" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="ACX-oL-7iI"/>
+                                            <constraint firstAttribute="height" constant="37" id="lxJ-xb-VaV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2b-nK-cG6">
+                                        <rect key="frame" x="174.66666666666663" y="26" width="209" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="00o-gp-yYZ"/>
+                                            <constraint firstAttribute="width" constant="209" id="kGY-sa-cqi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter where you serve or live, we are here for you 24/7 online and by telephone. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-t0-to4">
+                                        <rect key="frame" x="48" y="70" width="318" height="28.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28.670000000000002" id="D4O-On-IKR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="milGrayText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7" userLabel="CallUSButton">
+                                        <rect key="frame" x="31.666666666666657" y="106.66666666666666" width="351" height="104"/>
+                                        <accessibility key="accessibilityConfiguration" label="Call Us 800-342-9647"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="351" id="LmB-A5-gl0"/>
+                                            <constraint firstAttribute="height" constant="104" id="UvM-n3-Kpg"/>
+                                        </constraints>
+                                        <state key="normal" image="Image"/>
+                                        <connections>
+                                            <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS" userLabel="InternationButton">
+                                        <rect key="frame" x="31" y="201.66666666666669" width="352" height="68"/>
+                                        <accessibility key="accessibilityConfiguration" label="International calling options"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="4zw-YA-dSM"/>
+                                            <constraint firstAttribute="width" constant="352" id="6f6-ja-3N8"/>
+                                        </constraints>
+                                        <state key="normal" image="button_call_options"/>
+                                        <connections>
+                                            <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc" userLabel="SubscribeButton">
+                                        <rect key="frame" x="31.666666666666657" y="260.66666666666669" width="351" height="66"/>
+                                        <accessibility key="accessibilityConfiguration" label="Subscribe to our eNewsletters"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="2QA-Ne-VMi"/>
+                                            <constraint firstAttribute="width" constant="351" id="QgW-kA-djh"/>
+                                        </constraints>
+                                        <state key="normal" image="button_subscribe"/>
+                                        <connections>
+                                            <action selector="OpenSubscribeLink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="VE9-dO-LX6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2" userLabel="VisitButton">
+                                        <rect key="frame" x="12" y="319.66666666666669" width="390" height="72"/>
+                                        <accessibility key="accessibilityConfiguration" label="Visit Military One Source dot mil"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="390" id="Hcm-dc-tM1"/>
+                                            <constraint firstAttribute="height" constant="72" id="L2i-Bv-4WQ"/>
+                                        </constraints>
+                                        <state key="normal" image="buttion_visit"/>
+                                        <connections>
+                                            <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
+                                        <rect key="frame" x="68" y="401.66666666666669" width="34" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" label="Facebook"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="JKu-nC-BFa"/>
+                                            <constraint firstAttribute="width" constant="34" id="dCh-sy-spf"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook"/>
+                                        <connections>
+                                            <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="tNk-FJ-tD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
+                                        <rect key="frame" x="129" y="401.66666666666669" width="34" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" label="Twitter"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="qJk-BO-Y3s"/>
+                                            <constraint firstAttribute="height" constant="34" id="rJW-Qp-WWe"/>
+                                        </constraints>
+                                        <state key="normal" image="twitter"/>
+                                        <connections>
+                                            <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
+                                        <rect key="frame" x="190" y="401.66666666666669" width="34" height="34.333333333333314"/>
+                                        <accessibility key="accessibilityConfiguration" label="YouTube"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="17P-dT-WNU"/>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="ISZ-Mj-UEq"/>
+                                        </constraints>
+                                        <state key="normal" image="youtube"/>
+                                        <connections>
+                                            <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
+                                        <rect key="frame" x="312" y="401.66666666666669" width="34" height="34.333333333333314"/>
+                                        <accessibility key="accessibilityConfiguration" label="Instagram"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="nUf-Cs-vgr"/>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="oHZ-qJ-uU0"/>
+                                        </constraints>
+                                        <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
+                                        <rect key="frame" x="251" y="401.66666666666669" width="34" height="34.333333333333314"/>
+                                        <accessibility key="accessibilityConfiguration" label="Pinterest"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="ncg-c8-3bc"/>
+                                            <constraint firstAttribute="width" constant="34" id="w9v-Wg-Uwr"/>
+                                        </constraints>
+                                        <state key="normal" image="pinterest"/>
+                                        <connections>
+                                            <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiQ-iI-OpS">
+                                        <rect key="frame" x="48" y="456" width="318" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="318" id="F1C-5f-266"/>
+                                            <constraint firstAttribute="height" constant="20" id="zKH-Pq-35q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Live Chat - open in App Browser"/>
+                                        <connections>
+                                            <action selector="openLiveChat:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="6tS-PC-6gV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwC-GY-cHd">
+                                        <rect key="frame" x="31.666666666666657" y="496" width="351" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="351" id="Bfr-pF-cnU"/>
+                                            <constraint firstAttribute="height" constant="20" id="a4o-jA-it0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Live Chat - open in External Browser"/>
+                                        <connections>
+                                            <action selector="openLiveChat_External:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="8PR-Pb-hmY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yla-7c-AO2" firstAttribute="top" secondItem="Yzo-1i-eCc" secondAttribute="bottom" constant="-7" id="4gd-er-EtI"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="leading" secondItem="swb-c6-U8z" secondAttribute="trailing" constant="27" id="5Eo-VG-BfU"/>
+                                    <constraint firstItem="Yzo-1i-eCc" firstAttribute="top" secondItem="jgK-p4-SoS" secondAttribute="bottom" constant="-9" id="7NA-b3-aK6"/>
+                                    <constraint firstItem="jgK-p4-SoS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="7ho-m1-vGW"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" constant="10" id="8IL-jh-u2C"/>
+                                    <constraint firstItem="Yzo-1i-eCc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="96x-1U-5fQ"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" constant="10" id="EoY-s5-tPH"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="F99-gg-iru"/>
+                                    <constraint firstItem="jgK-p4-SoS" firstAttribute="top" secondItem="699-Pn-9m7" secondAttribute="bottom" constant="-9" id="GV2-It-vb7"/>
+                                    <constraint firstItem="VXa-AJ-EJq" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" constant="-60" id="Hji-J7-yc8"/>
+                                    <constraint firstItem="VXa-AJ-EJq" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="16" id="HmL-zV-jtb"/>
+                                    <constraint firstItem="QwC-GY-cHd" firstAttribute="top" secondItem="xiQ-iI-OpS" secondAttribute="bottom" constant="20" id="NYo-Vu-C8t"/>
+                                    <constraint firstItem="699-Pn-9m7" firstAttribute="top" secondItem="cLd-t0-to4" secondAttribute="bottom" constant="8" id="QM3-8e-RBb"/>
+                                    <constraint firstItem="jgK-p4-SoS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="Qjh-p1-Fpf"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" constant="10" id="QoI-6Z-neQ"/>
+                                    <constraint firstItem="cLd-t0-to4" firstAttribute="top" secondItem="VXa-AJ-EJq" secondAttribute="bottom" constant="17" id="TN8-Xy-3tt"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="WIV-zk-fo7"/>
+                                    <constraint firstItem="swb-c6-U8z" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" constant="10" id="Y1y-cr-dZV"/>
+                                    <constraint firstItem="xiQ-iI-OpS" firstAttribute="top" secondItem="uGy-WT-kpc" secondAttribute="bottom" constant="20" id="eH5-d6-dhk"/>
+                                    <constraint firstItem="QwC-GY-cHd" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="eoX-a7-9cq"/>
+                                    <constraint firstItem="d2b-nK-cG6" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="26" id="f9d-Bf-huJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLd-t0-to4" secondAttribute="trailing" constant="48" id="o5I-OR-EUX"/>
+                                    <constraint firstItem="yla-7c-AO2" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="obg-g6-6Kd"/>
+                                    <constraint firstItem="d2b-nK-cG6" firstAttribute="leading" secondItem="VXa-AJ-EJq" secondAttribute="trailing" constant="4" id="uMq-ek-v94"/>
+                                    <constraint firstItem="xiQ-iI-OpS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="vJE-za-kcc"/>
+                                    <constraint firstItem="cLd-t0-to4" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="48" id="x1C-pE-jqA"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="trailing" constant="27" id="xAF-Me-dDP"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" constant="10" id="y5A-Im-ybH"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="leading" secondItem="Ib8-uX-hr4" secondAttribute="trailing" constant="27" id="yer-Gj-rIr"/>
+                                    <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="yvD-Jo-WRX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-i3-dSv" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3Bu-NK-L1A"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="3cX-Ym-QXh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mdR-dF-BXC"/>
+                        <color key="backgroundColor" name="Color-Header,StatusBar"/>
+                        <constraints>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="top" secondItem="Rnp-i3-dSv" secondAttribute="bottom" id="4fl-RO-2fq"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="g5w-cF-IVR" secondAttribute="leading" id="4mB-aW-jb2"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" id="GGz-Fw-hhq"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="top" secondItem="g5w-cF-IVR" secondAttribute="top" id="HGw-Yp-VHN"/>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="centerX" secondItem="h18-4L-uDM" secondAttribute="centerX" id="HlT-XP-Wbu"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="trailing" secondItem="Y8w-JM-MXu" secondAttribute="trailing" id="MV4-U0-y1S"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="trailing" secondItem="g5w-cF-IVR" secondAttribute="trailing" id="NMH-Kk-Kvk"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="mdR-dF-BXC" secondAttribute="leading" id="Pva-sv-63A"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="centerX" secondItem="h18-4L-uDM" secondAttribute="centerX" id="Qpg-qH-z4b"/>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="top" secondItem="Rnp-i3-dSv" secondAttribute="bottom" id="Tp6-Ma-Wbd"/>
+                            <constraint firstItem="Rnp-i3-dSv" firstAttribute="top" secondItem="mdR-dF-BXC" secondAttribute="top" id="VkX-hr-HVJ"/>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="bottom" secondItem="mdR-dF-BXC" secondAttribute="bottom" id="fKx-wq-f2r"/>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="bottom" secondItem="g5w-cF-IVR" secondAttribute="bottom" id="yPA-W8-dmh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Connect" image="connect_ic" selectedImage="connect_focused_ic" id="kqb-G4-edL"/>
+                    <navigationItem key="navigationItem" id="6qX-7H-h78"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="customNavBar" destination="Rnp-i3-dSv" id="qBq-hH-ID9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kps-z4-Qu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979.7101449275365" y="2960.4910714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="351" height="104"/>
+        <image name="buttion_visit" width="351" height="72"/>
+        <image name="button_call_options" width="352" height="68"/>
+        <image name="button_subscribe" width="351" height="66"/>
+        <image name="connect_focused_ic" width="24.333333969116211" height="24.666666030883789"/>
+        <image name="connect_ic" width="24.333333969116211" height="24.666666030883789"/>
+        <image name="facebook" width="40" height="40"/>
+        <image name="instagram" width="34" height="34.333332061767578"/>
+        <image name="pinterest" width="34" height="34.333332061767578"/>
+        <image name="twitter" width="34" height="34.333332061767578"/>
+        <image name="youtube" width="34" height="34.333332061767578"/>
+        <namedColor name="Color-Header,StatusBar">
+            <color red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="milGrayText">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--In App BrowserVC-->
+        <scene sceneID="Iir-8q-9H7">
+            <objects>
+                <viewController storyboardIdentifier="InAppBrowserVC" modalTransitionStyle="crossDissolve" id="P4i-nR-qR8" customClass="InAppBrowserVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MSu-XE-xnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-QH-fbp" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3YP-EZ-FKH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="dcJ-PN-pQm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="mLF-HZ-3Ss"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-tv-xUA">
+                                <rect key="frame" x="0.0" y="108" width="414" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-kk-yDR">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="Back"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="ysy-UU-7Us"/>
+                                        </constraints>
+                                        <state key="normal" image="back_arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTouched:" destination="P4i-nR-qR8" eventType="touchUpInside" id="6Qh-oc-Hqr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dwx-kk-yDR" secondAttribute="bottom" id="0bs-b6-Yrt"/>
+                                    <constraint firstItem="dwx-kk-yDR" firstAttribute="leading" secondItem="hEo-tv-xUA" secondAttribute="leading" id="6fS-U6-YS7"/>
+                                    <constraint firstItem="dwx-kk-yDR" firstAttribute="top" secondItem="hEo-tv-xUA" secondAttribute="top" id="gnI-QP-tH5"/>
+                                    <constraint firstItem="dwx-kk-yDR" firstAttribute="centerY" secondItem="hEo-tv-xUA" secondAttribute="centerY" id="iry-7b-0Kn"/>
+                                    <constraint firstAttribute="height" constant="45" id="m8Z-39-k0D"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-s1-kGA">
+                                <rect key="frame" x="0.0" y="153" width="414" height="743"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IPX-Rj-jJ1"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="top" secondItem="ZyZ-QH-fbp" secondAttribute="bottom" id="FjS-OW-NBO"/>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="FmD-Rk-ZmA"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="Hoo-5w-ulG"/>
+                            <constraint firstAttribute="bottom" secondItem="2GF-s1-kGA" secondAttribute="bottom" id="Kwn-zu-kPA"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="SMB-xz-uwP"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="TrR-dO-gcB"/>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="ZKc-Ob-tz8"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="b8i-EU-MeI"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="top" secondItem="IPX-Rj-jJ1" secondAttribute="top" id="nI3-tU-Kwk"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="top" secondItem="hEo-tv-xUA" secondAttribute="bottom" id="wHU-m4-MNF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="custNavBar" destination="ZyZ-QH-fbp" id="pU5-eJ-175"/>
+                        <outlet property="webView" destination="2GF-s1-kGA" id="5mi-1t-3OH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoU-XS-TAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4631.1999999999998" y="-252.70935960591135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_arrow" width="15" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

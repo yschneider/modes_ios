@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--External Alert View-->
+        <scene sceneID="PFh-uS-4zr">
+            <objects>
+                <viewController storyboardIdentifier="externalalert_sbid" id="sFZ-PF-moY" customClass="ExternalAlertView" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tfa-33-Ct3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fon-O2-AeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xrO-SC-JvE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baN-VD-dsB">
+                                <rect key="frame" x="47.5" y="183.5" width="280" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9A-L3-03r">
+                                        <rect key="frame" x="30" y="20" width="220" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Vkz-ek-Nbl"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">You are about to leave
+My Military OneSource.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="WorkSans-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJe-te-LIp">
+                                        <rect key="frame" x="30" y="85" width="220" height="135"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">The appearance of hyperlinks does not constitute endorsement by the Department of Defense of non-U.S. Government sites or the information, products, or services contained therein, and does not exercise editorial control over all of the information that you may find at these locations. </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb3-2y-eW5">
+                                        <rect key="frame" x="79.5" y="230" width="121" height="18"/>
+                                        <color key="backgroundColor" name="milRed"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="BDN-WF-D0h"/>
+                                            <constraint firstAttribute="height" constant="18" id="ru7-Gf-ovi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="CONTINUE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTapOkButton:" destination="sFZ-PF-moY" eventType="touchUpInside" id="u0a-jg-1q3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A14-IW-yze">
+                                        <rect key="frame" x="79.5" y="262" width="121" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="66p-AN-EWB"/>
+                                            <constraint firstAttribute="width" constant="121" id="7St-UG-9sS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.070588235289999995" green="0.20000000000000001" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTapCancelButton:" destination="sFZ-PF-moY" eventType="touchUpInside" id="fMv-8r-XQm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="EyQ-LV-Mwc"/>
+                                    <constraint firstItem="Nb3-2y-eW5" firstAttribute="centerX" secondItem="baN-VD-dsB" secondAttribute="centerX" id="S18-OG-tpD"/>
+                                    <constraint firstItem="Q9A-L3-03r" firstAttribute="leading" secondItem="baN-VD-dsB" secondAttribute="leading" constant="30" id="SVX-2e-neS"/>
+                                    <constraint firstItem="iJe-te-LIp" firstAttribute="top" secondItem="Q9A-L3-03r" secondAttribute="bottom" constant="10" id="V1T-zM-rMp"/>
+                                    <constraint firstItem="Nb3-2y-eW5" firstAttribute="top" secondItem="iJe-te-LIp" secondAttribute="bottom" constant="10" id="YFv-ef-lXM"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJe-te-LIp" secondAttribute="trailing" constant="30" id="Zd1-tN-dyr"/>
+                                    <constraint firstItem="Q9A-L3-03r" firstAttribute="top" secondItem="baN-VD-dsB" secondAttribute="top" constant="20" id="bO3-DM-ekq"/>
+                                    <constraint firstItem="A14-IW-yze" firstAttribute="top" secondItem="Nb3-2y-eW5" secondAttribute="bottom" constant="14" id="h0X-H5-f4x"/>
+                                    <constraint firstItem="iJe-te-LIp" firstAttribute="leading" secondItem="baN-VD-dsB" secondAttribute="leading" constant="30" id="iIj-WM-l0D"/>
+                                    <constraint firstAttribute="height" constant="300" id="ie1-HY-Utt"/>
+                                    <constraint firstItem="A14-IW-yze" firstAttribute="centerX" secondItem="baN-VD-dsB" secondAttribute="centerX" id="sfk-qm-XC3"/>
+                                    <constraint firstAttribute="bottom" secondItem="A14-IW-yze" secondAttribute="bottom" constant="16" id="tCs-Q5-A2m"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q9A-L3-03r" secondAttribute="trailing" constant="30" id="xMM-On-iFK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="baN-VD-dsB" firstAttribute="centerX" secondItem="xrO-SC-JvE" secondAttribute="centerX" id="nC7-WG-Jvi"/>
+                            <constraint firstItem="baN-VD-dsB" firstAttribute="centerY" secondItem="xrO-SC-JvE" secondAttribute="centerY" id="qds-B3-SI6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="baN-VD-dsB" id="ISO-oa-aUt"/>
+                        <outlet property="cancelButton" destination="A14-IW-yze" id="woI-fS-9NT"/>
+                        <outlet property="messageLabel" destination="iJe-te-LIp" id="68R-AC-imQ"/>
+                        <outlet property="okButton" destination="Nb3-2y-eW5" id="wyw-ed-Y5F"/>
+                        <outlet property="titleLabel" destination="Q9A-L3-03r" id="rsB-P0-gFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yi-wb-Us2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="milRed">
+            <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

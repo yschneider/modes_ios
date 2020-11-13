@@ -1,0 +1,8 @@
+{
+    "appUpdateSettings": {
+        "version": "1.0.2",
+        "forceUpdate": false,
+        "updateMessage": "This version of the My Military OneSource app is no longer supported.",
+        "forceDate": "2021-01-01T00:00:00Z"
+    }
+}
